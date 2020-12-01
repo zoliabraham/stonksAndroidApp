@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/stockListMotionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="2dp"
+    app:layoutDescription="@xml/fragment_stocklist_scene"
+    tools:context=".ui.stocklist.StockListFragment">
+
+
+    <EditText
+        android:id="@+id/searchStockEditText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/round_textfield_design"
+        android:ems="10"
+        android:hint="@string/searchHint"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAutofill="no" />
+
+
+    <ImageButton
+        android:id="@+id/addStockButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:alpha="1"
+        android:background="@drawable/round_icon_button_design"
+        android:clickable="true"
+        android:padding="0dp"
+        android:src="@drawable/ic_round_add_24"
+        app:layout_constraintBottom_toBottomOf="@id/guideline"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/stonks_logo"
+        android:focusable="true" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.092" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/stocklistRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8016416" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchListRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/search_list_background"
+        android:elevation="3dp"
+        android:overScrollMode="never"
+        app:layout_constraintEnd_toEndOf="@+id/searchStockEditText"
+        app:layout_constraintStart_toStartOf="@+id/searchStockEditText"
+        app:layout_constraintTop_toBottomOf="@+id/searchStockEditText" />
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

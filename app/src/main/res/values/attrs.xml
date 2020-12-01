@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GraphView">
+        <attr name="canvasBackgroundColor" format="color"/>
+        <attr name="graphPointColor" format="color"/>
+        <attr name="graphLineColor" format="color" />
+        <attr name="numberOfDots" format="integer"/>
+    </declare-styleable>
+</resources>

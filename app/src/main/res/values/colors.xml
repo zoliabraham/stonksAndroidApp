@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#44C335</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#44C335</color>
+
+    <color name="buttonColor">#44C335</color>
+    <color name="buttonColorPressed">#1E5318</color>
+
+    <color name="colorPrimaryTransparent">#4B44C335</color>
+
+    <color name="stockSymbolBackground">#474747</color>
+    <color name="stockDownRed">#BA352B</color>
+    <color name="redTransparent">#7CBA352B</color>
+    <color name="stockDateTextColor">#BCBCBC</color>
+    <color name="loadingTextColor">#858585</color>
+    <color name="transparent">#00000000</color>
+    <color name="searchListBackground">#F0FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="removeIconGray">#ACACAC</color>
+    <color name="dismissGray">#9A9A9A</color>
+    <color name="dismissGrayTransparent">#7E939393</color>
+</resources>
